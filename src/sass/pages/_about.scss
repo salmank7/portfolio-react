@@ -1,0 +1,96 @@
+.about__main {
+    display: flex;
+    flex-direction: column;
+    color: $light-gray;
+    margin: 1rem 0 0 0;
+    width: 100%;
+    #{&}__left {
+        flex: 1.5;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .about__main__left__title {
+            font-family: $playfair;
+            font-size: $font-size-xxl;
+        }
+        .about__main__left__description {
+            font-size: $font-size-small;
+            line-height: 22px;
+            @include md {
+                font-size: $font-size-medium;
+            }
+        }
+        .about__main__left__signature {
+            font-family: $greatvibes;
+            font-size: 4rem;
+        }
+    }
+    #{&}__right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2rem;
+        @include lg {
+            margin-top: 0;
+        }
+        .about__main__right__title {
+            font-family: $playfair;
+            font-size: $font-size-xxl;
+        }
+        .about__main__right__info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem 0;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            .about__main__right__info__single {
+                span {
+                    font-weight: bold;
+                    border-bottom: 2px solid $sky-blue;
+                }
+            }
+        }
+    }
+    @include lg {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.about__services__container {
+    display: grid;
+    grid-template-columns: 1;
+    padding: 0 1rem;
+    gap: 3rem 1rem;
+    color: $white-color;
+    @include sm {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include lg {
+        grid-template-columns: repeat(3,1fr);
+    }
+    @include xl {
+        grid-template-columns: repeat(4,1fr);
+    }
+    .about__services__container__service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+        .about__services__container__service__icon {
+            color: $sky-blue;
+        }
+        .about__services__container__service__title {
+            font-family: $playfair;
+            font-size: $font-size-large;
+            font-weight: bold;
+        }
+        .about__services__container__service__description {
+            font-size: $font-size-small;
+            // line-height: 20px;
+        }
+    }
+}

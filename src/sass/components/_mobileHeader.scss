@@ -1,0 +1,35 @@
+  .mobile__header {
+    max-width: 100%;
+    position: relative;
+    z-index: 10;
+    .mobile__header__container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        background: $dark-color;
+        color: $white-color;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .mobile__header__container__logo {
+            color: white;
+            font-size: $font-size-xxl;
+            text-decoration: none;
+            font-family: $playfair;
+            text-transform: uppercase;
+        }
+        .mobile__header__container__toggle {
+            cursor: pointer;
+            transition: all 500ms;
+            &:hover {
+                transform: rotate(90deg);
+            }
+        }
+        @include md {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.testimonial {
+  display: flex;
+  color: $white-color;
+  padding: 0 1rem;
+  .quote {
+    background: $dark-color;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    border-radius: 50px 0;
+-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 20% 86%, 12% 100%, 11% 86%, 0 86%);
+clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 20% 86%, 12% 100%, 11% 86%, 0 86%);
+
+
+    align-items: center;
+    .quote__sign {
+      color: $sky-blue;
+    }
+  }
+  .person {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 1rem;
+    .person__info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem 0;
+      .person__info__name {
+        font-family: $playfair;
+        font-size: $font-size-large;
+        font-weight: bold;
+      }
+      .person__info__profession {
+        margin-bottom: 11rem;
+      }
+    }
+  }
+  img {
+    height: 100px;
+    width: 100px;
+    border-radius: 40px 10% 40px 10%;
+  }
+}
