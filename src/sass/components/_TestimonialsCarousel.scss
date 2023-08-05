@@ -3,7 +3,7 @@
   color: $white-color;
   padding: 0 1rem;
   .quote {
-    background: $dark-color;
+    background: $secondary-color;
     padding: 2rem 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -15,7 +15,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 20% 86%, 12% 100%, 11% 86%, 0 86%);
 
     align-items: center;
     .quote__sign {
-      color: $sky-blue;
+      color: $primary-color;
     }
   }
   .person {
@@ -27,7 +27,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 20% 86%, 12% 100%, 11% 86%, 0 86%);
       flex-direction: column;
       gap: 0.25rem 0;
       .person__info__name {
-        font-family: $playfair;
+        font-family: $heading-font;
         font-size: $font-size-large;
         font-weight: bold;
       }

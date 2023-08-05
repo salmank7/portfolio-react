@@ -8,17 +8,17 @@
         left: 0;
         width: 100%;
         display: block;
-        background: $dark-color;
+        background: $secondary-color;
         color: $white-color;
         padding: 0.5rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
         .mobile__header__container__logo {
-            color: white;
+            color: $white-color;
             font-size: $font-size-xxl;
             text-decoration: none;
-            font-family: $playfair;
+            font-family: $heading-font;
             text-transform: uppercase;
         }
         .mobile__header__container__toggle {

@@ -17,8 +17,8 @@
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   font-size: $font-size-large;
-  border: 1px solid $sky-blue;
-  color: $sky-blue;
+  border: 1px solid $primary-color;
+  color: $primary-color;
   text-transform: uppercase;
 }
 .hvr-shutter-out-horizontal:before {
@@ -42,7 +42,7 @@
   transition-timing-function: ease-out;
 }
 .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
-  color: $dark-color;
+  color: $secondary-color
 }
 .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
   -webkit-transform: scaleX(1);

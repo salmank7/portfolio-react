@@ -29,7 +29,7 @@
     .resume__card__session__line {
         height: 140px;
         width: 4px;
-        background: $sky-blue;
+        background: $primary-color;
         position: relative;
         .start {
             font-size: $font-size-small;
@@ -46,7 +46,7 @@
         &::before {
             content: "";
             position: absolute;
-            background: $sky-blue;
+            background: $primary-color;
            height: 10px;
             width: 10px;
             border-radius: 50%;
@@ -56,7 +56,7 @@
         &::after {
             content: "";
             position: absolute;
-            background: $sky-blue;
+            background: $primary-color;
             height: 10px;
             width: 10px;
             border-radius: 50%;
@@ -65,7 +65,7 @@
         }
     }
     .resume__card__content__label {
-        font-family: $playfair;
+        font-family: $heading-font;
         font-size: $font-size-large;
         font-weight: bold;
         white-space: nowrap;
@@ -73,7 +73,7 @@
         margin: 0.5rem 0;
     }
     .resume__card__content__company {
-        color: $sky-blue;
+        color: $primary-color;
         font-size: $font-size-xs;
         font-weight: bold;
     }

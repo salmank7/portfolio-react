@@ -8,6 +8,7 @@ import {
   AiFillTwitterSquare,
   AiFillLinkedin,
   AiFillGithub,
+  AiFillDribbbleSquare,
 } from "react-icons/ai";
 
 export const sidebarMenuLinks = [
@@ -68,6 +69,11 @@ export const sidebarFooterIcons = [
   {
     id: 4,
     icon: AiFillLinkedin,
+    route: "/",
+  },
+  {
+    id: 5,
+    icon: AiFillDribbbleSquare,
     route: "/",
   },
 ];

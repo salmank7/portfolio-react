@@ -3,14 +3,14 @@
     align-items: flex-end;
     justify-content: space-between;
     border-bottom: 2px dotted $dark-gray;
-    font-family: $playfair;
+    font-family: $heading-font;
     padding-bottom: 0.5rem;
     #{&}__label {
         font-size: $font-size-3xxl;
-        color: $sky-blue;
+        color: $primary-color;
         font-weight: bold;
     }
     #{&}__icon{
-        color: $sky-blue
+        color: $primary-color
     }
 }

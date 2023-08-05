@@ -1,7 +1,7 @@
 .sidebar {
     width: 200px;
     height: 100vh;
-    background: $dark-color;
+    background: $secondary-color;
     overflow: hidden;
     position: fixed;
     z-index: 20;
@@ -24,7 +24,7 @@
             .sidebar__hero__name {
                 margin: 0;
                 width: 100%;
-                background: $sky-blue;
+                background: $primary-color;
                 color: $white-color;
                 padding: 1rem 0;
                 text-align: center;
@@ -56,7 +56,7 @@
             padding-top: 0.7rem;
             padding-bottom: 0.7rem;
             &.active {
-                color: white;
+                color: $white-color;
             }
             .sidebar__menu__link__label {
             font-size: 0.75rem;
@@ -89,7 +89,7 @@
         color: $dark-gray;
         font-size: 12px;
         text-align: center;
-        line-height: 5px;
+        padding-bottom: 0.5rem;
     }
 }
 

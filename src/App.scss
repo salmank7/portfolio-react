@@ -1,5 +1,5 @@
 @import "./sass/typography.scss";
-@import "./sass/variables.scss";
+@import "./sass/colors.scss";
 @import "./sass/mixins";
 
 
@@ -8,10 +8,12 @@
 @import "./sass/components/mobileHeader.scss";
 @import "./sass/components/pageHeader";
 @import "./sass/components/button";
-@import "./sass/components/AutoplayCarousel";
+@import "./sass/components/clientCarousel";
 @import "./sass/components/TestimonialsCarousel.scss";
+@import "./sass/components/cardPreviewModal";
 @import "./sass/components/resumeComponenet";
 @import "./sass/components/experienceSlider";
+@import "./sass/components/blogCard";
 // pages scss
 @import "./sass/pages/home.scss";
 @import "./sass/pages/about.scss";
@@ -28,7 +30,7 @@
     margin: 0;
 }
 body {
-    background: rgb(74, 74, 74);
+    background: $dark-gray;
 }
 
 
@@ -61,12 +63,12 @@ img {
 }
 .section-title {
     font-weight: bold;
-    font-family: $playfair;
+    font-family: $heading-font;
     font-size: $font-size-xl;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: $white-color;
-    border-bottom: 2px solid $sky-blue;
+    border-bottom: 2px solid $primary-color;
     display: inline;
     position: relative;
     padding: 0 0.5rem;
@@ -74,7 +76,7 @@ img {
     &::before{
         content: "";
         position: absolute;
-        background: $sky-blue;
+        background: $primary-color;
         bottom: -0.1rem;
         left: -0.2rem;
         height: 20px;
@@ -83,7 +85,7 @@ img {
     &::after{
         content: "";
         position: absolute;
-        background: $sky-blue;
+        background: $primary-color;
          bottom: -0.1rem;
         right: -0.2rem;
         height: 20px;
@@ -98,7 +100,7 @@ img {
     width: 100%;
     min-height: 100vh;
     padding-top: 48px;
-    background: $dark-color-sec;
+    background: $accent-color;
     @include md {
         width: calc(100% - 200px);
         margin-left: 200px;

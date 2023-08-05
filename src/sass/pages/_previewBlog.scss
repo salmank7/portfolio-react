@@ -12,21 +12,21 @@
 }
 
 .preview__blog__content__heading {
-    background: $dark-color-sec;
+    background: $accent-color;
     color: $white-color;
     text-align: center;
     width: 60%;
-    box-shadow: 1px 1px 10px $dark-color;
+    box-shadow: 1px 1px 10px $secondary-color;
     margin: -6rem auto 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 0.5rem;
     .preview__blog__content__header__author {
-        color: $sky-blue;
+        color: $primary-color;
     }
     .preview__blog__content__header__title {
-        font-family: $playfair;
+        font-family: $heading-font;
     }
     .preview__blog__content__header__date {
         font-style: italic;
@@ -39,7 +39,7 @@
     flex-direction: column;
     gap: 2rem;
     .preview__blog__content__main__heading {
-        color: $sky-blue;
+        color: $primary-color;
         font-weight: bold;
     }
     h2 {

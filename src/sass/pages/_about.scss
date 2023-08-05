@@ -10,7 +10,7 @@
         flex-direction: column;
         gap: 1.5rem;
         .about__main__left__title {
-            font-family: $playfair;
+            font-family: $heading-font;
             font-size: $font-size-xxl;
         }
         .about__main__left__description {
@@ -21,7 +21,7 @@
             }
         }
         .about__main__left__signature {
-            font-family: $greatvibes;
+            font-family: $signature-font;
             font-size: 4rem;
         }
     }
@@ -35,7 +35,7 @@
             margin-top: 0;
         }
         .about__main__right__title {
-            font-family: $playfair;
+            font-family: $heading-font;
             font-size: $font-size-xxl;
         }
         .about__main__right__info {
@@ -47,7 +47,7 @@
             .about__main__right__info__single {
                 span {
                     font-weight: bold;
-                    border-bottom: 2px solid $sky-blue;
+                    border-bottom: 2px solid $primary-color;
                 }
             }
         }
@@ -81,16 +81,15 @@
         text-align: center;
         gap: 1rem;
         .about__services__container__service__icon {
-            color: $sky-blue;
+            color: $primary-color;
         }
         .about__services__container__service__title {
-            font-family: $playfair;
+            font-family: $heading-font;
             font-size: $font-size-large;
             font-weight: bold;
         }
         .about__services__container__service__description {
             font-size: $font-size-small;
-            // line-height: 20px;
         }
     }
 }

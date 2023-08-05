@@ -7,30 +7,30 @@
     justify-content: center;
     text-align: center;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url("home_image.jpg");
+                url("home_image.jpg") !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: $white-color;
     .home__container__title {
-        text-shadow: 4px 4px 0px $dark-color;
+        text-shadow: 4px 4px 0px $secondary-color;
         font-size: 4rem;
         font-weight: bold;
-        font-family: $playfair;
+        font-family: $heading-font;
         line-height: 100px;
     }
     .home__container__info {
-        text-shadow: 1px 1px black;
+        text-shadow: 1px 1px $secondary-color;
         font-size: 2rem;
         .typed {
             text-decoration: underline;
-            text-shadow: 2px 2px rgb(0, 0, 0);
+            text-shadow: 2px 2px $secondary-color;
             font-weight: bold;
-            color: $sky-blue;
+            color: $primary-color;
         }
     }
     .toggle-down {
-        background: $sky-blue;
+        background: $primary-color;
         color: $white-color;
         display: flex;
         align-items: center;
