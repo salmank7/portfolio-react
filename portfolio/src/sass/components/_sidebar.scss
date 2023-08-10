@@ -1,0 +1,101 @@
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: $secondary-color;
+    overflow: hidden;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    transition: all 300ms linear;
+    .sidebar__grid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        .sidebar__hero {
+            z-index: 200;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            .sidebar__hero__image {
+                width: 100%;
+            }
+            .sidebar__hero__name {
+                margin: 0;
+                width: 100%;
+                background: $primary-color;
+                color: $white-color;
+                padding: 1rem 0;
+                text-align: center;
+            }
+        }
+    }
+    // sidebar_menu
+
+    .sidebar__menu {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+        .sidebar__menu__link {
+            width: 100%;
+            border-bottom: 1px dotted $extra-dark-gray;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 0 1.5rem;
+            color: $dark-gray;
+            text-decoration: none;
+            font-size: 1rem;
+            text-align: center;
+            padding: 0.5rem 0;
+            text-transform: uppercase;
+            padding-left: 2.45rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+            &.active {
+                color: $white-color;
+            }
+            .sidebar__menu__link__label {
+            font-size: 0.75rem;
+            }
+
+        }
+    }
+
+    // Sidebar footer
+    .sidebar__menu__footer {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        .sidebar__menu__footer_icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0 0.5rem;
+            .sidebar__menu__footer_icon {
+                color: $dark-gray;
+                transition: all 300ms;
+                &:hover{
+                    transform: scale(1.11);
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .sidebar__menu__copyright {
+        color: $dark-gray;
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+}
+
+
+@media (max-width: $screen-md-min){
+    .hide {
+        transform: translateX(-200px);
+    }
+}

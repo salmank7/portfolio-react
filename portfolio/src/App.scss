@@ -1,0 +1,110 @@
+@import "./sass/typography.scss";
+@import "./sass/colors.scss";
+@import "./sass/mixins";
+
+
+// components scss
+@import "./sass/components/sidebar.scss";
+@import "./sass/components/mobileHeader.scss";
+@import "./sass/components/pageHeader";
+@import "./sass/components/button";
+@import "./sass/components/clientCarousel";
+@import "./sass/components/TestimonialsCarousel.scss";
+@import "./sass/components/cardPreviewModal";
+@import "./sass/components/resumeComponenet";
+@import "./sass/components/experienceSlider";
+@import "./sass/components/blogCard";
+// pages scss
+@import "./sass/pages/home.scss";
+@import "./sass/pages/about.scss";
+@import "./sass/pages/resume";
+@import "./sass/pages/portfolio";
+@import "./sass/pages/blogs";
+@import "./sass/pages/contact";
+@import "./sass/pages/previewBlog.scss";
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background: $dark-gray;
+}
+
+
+// base css
+img {
+    width: 100%;
+    height: 100%;
+}
+
+// basicoutlet
+.basic-outlet {
+    display: flex;
+    align-items: start;
+}
+
+.mobile-outlet {
+    width: 100%;
+    position: relative;
+}
+
+// utilility Classes
+.basic-layout {
+    max-width: 1200px;
+    padding: 3rem 1rem;
+    margin: 0 auto;
+    @include sm {
+        padding: 3rem 2rem 0;
+    }
+
+}
+.section-title {
+    font-weight: bold;
+    font-family: $heading-font;
+    font-size: $font-size-xl;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $white-color;
+    border-bottom: 2px solid $primary-color;
+    display: inline;
+    position: relative;
+    padding: 0 0.5rem;
+    line-height: 42px;
+    &::before{
+        content: "";
+        position: absolute;
+        background: $primary-color;
+        bottom: -0.1rem;
+        left: -0.2rem;
+        height: 20px;
+        width: 3px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        background: $primary-color;
+         bottom: -0.1rem;
+        right: -0.2rem;
+        height: 20px;
+        width: 3px;
+    }
+
+}
+
+
+
+.main-section-layout {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 48px;
+    background: $accent-color;
+    @include md {
+        width: calc(100% - 200px);
+        margin-left: 200px;
+        padding-top: 0;
+    }
+
+}
