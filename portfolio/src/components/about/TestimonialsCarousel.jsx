@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaQuoteLeft } from "react-icons/fa";
 import { testimonials } from "./aboutConstants";
-// import './TestimonialSlider.css'; // Create a custom CSS file for styling the carousel if needed
 
 const TestimonialSlider = () => {
   const settings = {
