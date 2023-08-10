@@ -3,6 +3,7 @@ import { ImProfile } from "react-icons/im";
 import ResumeComponent from "../components/resume/ResumeComponent";
 import { education, experience } from "../components/resume/resumeConstants";
 import { motion } from "framer-motion";
+import Skills from "../components/resume/Skills";
 
 const Resume = () => {
   return (
@@ -20,6 +21,9 @@ const Resume = () => {
           <ResumeComponent label="Experience" data={experience} />
           {/* Education */}
           <ResumeComponent label="Education" data={education} />
+        </div>
+        <div className="skills__container">
+          <Skills />
         </div>
       </div>
     </motion.div>

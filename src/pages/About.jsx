@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import PageHeader from "../components/PageHeader";
 import { GoPerson } from "react-icons/go";
 import Button from "../components/Button";
-import { LiaLaptopSolid } from "react-icons/lia";
 import SectionTitle from "../components/SectionTitle";
-import ClientCarousel from "../components/ClientCarousel";
-import TestimonialSlider from "../components/TestimonialsCarousel";
+import ClientCarousel from "../components/about/ClientCarousel";
+import TestimonialSlider from "../components/about/TestimonialsCarousel";
+import { servicesConstants } from "../components/about/aboutConstants";
 
 const About = () => {
   return (
@@ -64,73 +64,36 @@ const About = () => {
                 <span>Freelance:</span> Available
               </p>
             </div>
-            <Button label="Download Now" />
+            <a
+              href="/cv.pdf"
+              style={{ cursor: "pointer" }}
+              download="my-cv.pdf"
+            >
+              <Button label="Download Now" />
+            </a>
           </div>
         </div>
         {/* About Services */}
         <div className="about__services">
           <SectionTitle label="Services" />
           <div className="about__services__container">
-            {/* single service */}
-            <div className="about__services__container__service">
-              <LiaLaptopSolid
-                size={80}
-                className="about__services__container__service__icon"
-              />
-              <div className="about__services__container__service__title">
-                Web Development
+            {servicesConstants.map((service) => (
+              <div
+                className="about__services__container__service"
+                key={service.id}
+              >
+                <service.icon
+                  size={80}
+                  className="about__services__container__service__icon"
+                />
+                <div className="about__services__container__service__title">
+                  {service.label}
+                </div>
+                <div className="about__services__container__service__description">
+                  {service.description}
+                </div>
               </div>
-              <div className="about__services__container__service__description">
-                Amet aspernatur delectus maxime ducimus similique Ratione
-                asperiores corporis provident aut libero.
-              </div>
-            </div>
-            {/* single service */}
-            {/* single service */}
-            <div className="about__services__container__service">
-              <LiaLaptopSolid
-                size={80}
-                className="about__services__container__service__icon"
-              />
-              <div className="about__services__container__service__title">
-                Web Development
-              </div>
-              <div className="about__services__container__service__description">
-                Amet aspernatur delectus maxime ducimus similique Ratione
-                asperiores corporis provident aut libero.
-              </div>
-            </div>
-            {/* single service */}
-            {/* single service */}
-            <div className="about__services__container__service">
-              <LiaLaptopSolid
-                size={80}
-                className="about__services__container__service__icon"
-              />
-              <div className="about__services__container__service__title">
-                Web Development
-              </div>
-              <div className="about__services__container__service__description">
-                Amet aspernatur delectus maxime ducimus similique Ratione
-                asperiores corporis provident aut libero.
-              </div>
-            </div>
-            {/* single service */}
-            {/* single service */}
-            <div className="about__services__container__service">
-              <LiaLaptopSolid
-                size={80}
-                className="about__services__container__service__icon"
-              />
-              <div className="about__services__container__service__title">
-                Web Development
-              </div>
-              <div className="about__services__container__service__description">
-                Amet aspernatur delectus maxime ducimus similique Ratione
-                asperiores corporis provident aut libero.
-              </div>
-            </div>
-            {/* single service */}
+            ))}
           </div>
         </div>
 

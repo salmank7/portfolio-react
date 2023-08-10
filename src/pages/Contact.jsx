@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { AiFillPhone, AiOutlineContacts, AiTwotoneMail } from "react-icons/ai";
 import { ImLocation } from "react-icons/im";
-
+import emailjs from "@emailjs/browser";
 import PageHeader from "../components/PageHeader";
 import Button from "../components/Button";
 
 const Contact = () => {
+  const form = useRef();
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
@@ -36,7 +37,31 @@ const Contact = () => {
       return;
     }
 
-    alert("Form submitted successfully!");
+    // Use emailjs to send the form data
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current, // Use the form element itself
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Form submitted successfully!");
+
+          // Reset form fields after successful submission
+          setFormValues({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          alert("An error occurred while submitting the form.");
+        }
+      );
   };
 
   return (
@@ -51,7 +76,7 @@ const Contact = () => {
         <PageHeader label="Contact" icon={AiOutlineContacts} />
         <div className="contact">
           <div className="section-title">Let&apos;s Talk</div>
-          <form className="contact__main" onSubmit={handleSubmit}>
+          <form className="contact__main" onSubmit={handleSubmit} ref={form}>
             <div className="contact__main__name">
               <label htmlFor="name">Name</label>
               <input

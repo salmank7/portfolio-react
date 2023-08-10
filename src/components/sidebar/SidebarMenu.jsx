@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { sidebarMenuLinks } from "./constansts";
+import { sidebarMenuLinks } from "./sidebarConstants";
 import useSidebar from "../../hooks/useSidebar";
 import useActiveLink from "../../hooks/useActiveLink";
 

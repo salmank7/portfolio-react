@@ -64,3 +64,27 @@ export const education = [
     endYear: "2011",
   },
 ];
+
+// skills
+const skills = [
+  { name: "react", icon: "devicon-react-original" },
+  { name: "nextjs", icon: "devicon-nextjs-line" },
+  { name: "javascript", icon: "devicon-javascript-plain" },
+  { name: "CSS3", icon: "devicon-css3-plain" },
+  { name: "typescript", icon: "devicon-typescript-original" },
+  { name: "sass", icon: "devicon-sass-original" },
+  { name: "tailwind", icon: "devicon-tailwindcss-plain" },
+  { name: "git", icon: "devicon-git-plain" },
+  { name: "webpack", icon: "devicon-webpack-plain" },
+  { name: "jest", icon: "devicon-jest-plain" },
+  { name: "redux", icon: "devicon-redux-plain" },
+  { name: "npm", icon: "devicon-npm-original-wordmark" },
+  { name: "mongodb", icon: "devicon-mongodb-plain" },
+  { name: "Bootstrap", icon: "devicon-bootstrap-plain" },
+];
+
+export const skillsWithIds = skills.map((skill, index) => ({
+  id: index + 1,
+  name: skill.name,
+  icon: skill.icon,
+}));
